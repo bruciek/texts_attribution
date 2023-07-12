@@ -9,3 +9,4 @@ with open('Данные/Не обработанные/Л. Н. Андреев/and
     soup = Soup(text, features="xml")
 names = [offer.get_text(strip=True) for offer in soup.find_all('p')]
 print(*names, sep='\n')
+
