@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Шепот, робкое дыханье…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>31.1.2020</date>
+        <id>e622b903-264f-4d52-967e-9eecb6fb9f9b</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Шепот, робкое дыханье… — Афанасий Фет</strong></p>
+<p>Шепот, робкое дыханье,</p>
+<p>Трели соловья,</p>
+<p>Серебро и колыханье</p>
+<p>Сонного ручья,</p>
+<empty-line/>
+<p>Свет ночной, ночные тени,</p>
+<p>Тени без конца,</p>
+<p>Ряд волшебных изменений</p>
+<p>Милого лица,</p>
+<empty-line/>
+<p>В дымных тучках пурпур розы,</p>
+<p>Отблеск янтаря,</p>
+<p>И лобзания, и слезы,</p>
+<p>И заря, заря!..</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

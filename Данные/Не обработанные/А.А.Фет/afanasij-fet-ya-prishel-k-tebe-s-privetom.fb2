@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Я пришел к тебе с приветом…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>6.2.2020</date>
+        <id>f9762c77-8101-4def-ab11-1c0c16d5a0ee</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Я пришел к тебе с приветом… — Афанасий Фет</strong></p>
+<p>Я пришел к тебе с приветом,</p>
+<p>Рассказать, что солнце встало,</p>
+<p>Что оно горячим светом</p>
+<p>По листам затрепетало;</p>
+<empty-line/>
+<p>Рассказать, что лес проснулся,</p>
+<p>Весь проснулся, веткой каждой,</p>
+<p>Каждой птицей встрепенулся</p>
+<p>И весенней полон жаждой;</p>
+<empty-line/>
+<p>Рассказать, что с той же страстью,</p>
+<p>Как вчера, пришел я снова,</p>
+<p>Что душа всё так же счастью</p>
+<p>И тебе служить готова;</p>
+<empty-line/>
+<p>Рассказать, что отовсюду</p>
+<p>На меня весельем веет,</p>
+<p>Что не знаю сам, что буду</p>
+<p>Петь, — но только песня зреет.</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

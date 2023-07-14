@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Жду я, тревогой объят…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>6.2.2020</date>
+        <id>b009a420-9b33-4359-876d-200612dffe39</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Жду я, тревогой объят… — Афанасий Фет</strong></p>
+<p>Жду я, тревогой объят,</p>
+<p>Жду тут на самом пути:</p>
+<p>Этой тропой через сад</p>
+<p>Ты обещалась прийти.</p>
+<empty-line/>
+<p>Плачась, комар пропоет,</p>
+<p>Свалится плавно листок…</p>
+<p>Слух, раскрываясь, растет,</p>
+<p>Как полуночный цветок.</p>
+<empty-line/>
+<p>Словно струну оборвал</p>
+<p>Жук, налетевши на ель;</p>
+<p>Хрипло подругу позвал</p>
+<p>Тут же у ног коростель.</p>
+<empty-line/>
+<p>Тихо под сенью лесной</p>
+<p>Спят молодые кусты…</p>
+<p>Ах, как пахнуло весной!..</p>
+<p>Это наверное ты!</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

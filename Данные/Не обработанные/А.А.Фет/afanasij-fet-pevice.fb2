@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Певице</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.9.1</program-used>
+        <date>31.1.2020</date>
+        <id>6737ead8-e3ae-47be-bb41-ef0a1b23873e</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Певице — Афанасий Фет</strong></p>
+<p>Уноси мое сердце в звенящую даль,</p>
+<p>Где как месяц за рощей печаль;</p>
+<p>В этих звуках на жаркие слезы твои</p>
+<p>Кротко светит улыбка любви.</p>
+<empty-line/>
+<p>О дитя! как легко средь незримых зыбей</p>
+<p>Доверяться мне песне твоей:</p>
+<p>Выше, выше плыву серебристым путем,</p>
+<p>Будто шаткая тень за крылом…</p>
+<empty-line/>
+<p>Вдалеке замирает твой голос, горя,</p>
+<p>Словно за морем ночью заря, —</p>
+<p>И откуда-то вдруг, я понять не могу,</p>
+<p>Грянет звонкий прилив жемчугу.</p>
+<empty-line/>
+<p>Уноси ж мое сердце в звенящую даль,</p>
+<p>Где кротка, как улыбка, печаль,</p>
+<p>И всё выше помчусь серебристым путем</p>
+<p>Я, как шаткая тень за крылом.</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

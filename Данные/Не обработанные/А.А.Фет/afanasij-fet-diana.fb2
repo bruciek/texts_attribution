@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Диана</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>31.1.2020</date>
+        <id>a243fc33-908d-4034-8fa7-31b78500b12c</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Диана — Афанасий Фет</strong></p>
+<p>Богини девственной округлые черты,</p>
+<p>Во всём величии блестящей наготы,</p>
+<p>Я видел меж дерев над ясными водами.</p>
+<p>С продолговатыми, бесцветными очами</p>
+<p>Высоко поднялось открытое чело, —</p>
+<p>Его недвижностью вниманье облегло,</p>
+<p>И дев молению в тяжелых муках чрева</p>
+<p>Внимала чуткая и каменная дева.</p>
+<p>Но ветер на заре между листов проник, —</p>
+<p>Качнулся на воде богини ясный лик;</p>
+<p>Я ждал, — она пойдет с колчаном и стрелами,</p>
+<p>Молочной белизной мелькая меж древами,</p>
+<p>Взирать на сонный Рим, на вечный славы град,</p>
+<p>На желтоводный Тибр, на группы колоннад,</p>
+<p>На стогны длинные… Но мрамор недвижимый</p>
+<p>Белел передо мной красой непостижимой.</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <book-title>Я_буду_ждать</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <program-used>calibre 4.22.0</program-used>
+        <date>27.9.2020</date>
+        <id>7092c5fc-bb2e-45e5-9bf9-940bd5291ef5</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p>Я буду ждать - Константин Бальмонт</p>
+<p>Я буду ждать тебя мучительно, Я буду ждать тебя года,</p>
+<p>Ты манишь сладко-исключительно, Ты обещаешь навсегда.</p>
+<p>Ты вся - безмолвие несчастия, Случайный свет во мгле земной, Неизъясненность сладострастия, Еще не познанного мной.</p>
+<p>Своей усмешкой вечно-кроткою, Лицом, всегда склоненным ниц, Своей неровною походкою</p>
+<p>Крылатых, но не ходких птиц, Ты будишь чувства тайно-спящие, И знаю, не затмит слеза</p>
+<p>Твои куда-то прочь глядящие, Твои неверные глаза.</p>
+<p>Не знаю, хочешь ли ты радости, Уста к устам, прильнуть ко мне, Но я не знаю высшей сладости, Как быть с тобой наедине.</p>
+<p>Не знаю, смерть ли ты нежданная</p>
+<p>Иль нерожденная звезда,</p>
+<p>Но буду ждать тебя, желанная, Я буду ждать тебя всегда.</p>
+</section>
+</body>
+
+</FictionBook>
