@@ -1,4 +1,4 @@
-def number_of_unique_words(words: list[str]) -> int:
+def number_of_words_that_occur_once(words:list[str]) -> int:
     count = 0
     unique_word = set(words)
     for word in unique_word:
