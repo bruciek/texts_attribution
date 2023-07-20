@@ -1,4 +1,4 @@
-import re
+#import re
 def number_of_capital_letter(sentences:list[str], beginning_of_sentences:bool) -> int:
     full_pattern = re.compile('[^АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ]')
     cap_letters_from_text = re.sub(full_pattern, '', ''.join(sentences))
