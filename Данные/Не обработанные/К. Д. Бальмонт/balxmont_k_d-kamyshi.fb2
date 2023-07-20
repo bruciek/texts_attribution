@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <book-title>Камыши</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <program-used>calibre 4.22.0</program-used>
+        <date>27.9.2020</date>
+        <id>c648ca01-f770-4bb4-b8ac-4809ac5fab77</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p>Камыши - Константин Бальмонт</p>
+<p>Полночной порою в болотной глуши</p>
+<p>Чуть слышно, бесшумно, шуршат камыши.</p>
+<p>О чем они шепчут? О чем говорят?</p>
+<p>Зачем огоньки между ними горят?</p>
+<p>Мелькают, мигают - и снова их нет.</p>
+<p>И снова забрезжил блуждающий свет.</p>
+<p>Полночной порой камыши шелестят.</p>
+<p>В них жабы гнездятся, в них змеи свистят.</p>
+<p>В болоте дрожит умирающий лик.</p>
+<p>То месяц багровый печально поник.</p>
+<p>И тиной запахло. И сырость ползет.</p>
+<p>Трясина заманит, сожмет, засосет.</p>
+<p>“Кого? Для чего? - камыши говорят,-</p>
+<p>Зачем огоньки между нами горят?”</p>
+<p>Но месяц печальный безмолвно поник.</p>
+<p>Не знает. Склоняет все ниже свой лик.</p>
+<p>И, вздох повторяя погибшей души,</p>
+<p>Тоскливо, бесшумно, шуршат камыши.</p>
+</section>
+</body>
+
+</FictionBook>

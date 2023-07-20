@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Как беден наш язык! — Хочу и не могу…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>6.2.2020</date>
+        <id>57878362-c27c-4d0a-9f31-702d71a2daa6</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Как беден наш язык! — Хочу и не могу… — Афанасий Фет</strong></p>
+<p>Как беден наш язык! — Хочу и не могу. —</p>
+<p>Не передать того ни другу, ни врагу,</p>
+<p>Что буйствует в груди прозрачною волною.</p>
+<p>Напрасно вечное томление сердец,</p>
+<p>И клонит голову маститую мудрец</p>
+<p>Пред этой ложью роковою.</p>
+<empty-line/>
+<p>Лишь у тебя, поэт, крылатый слова звук</p>
+<p>Хватает на лету и закрепляет вдруг</p>
+<p>И темный бред души и трав неясный запах;</p>
+<p>Так, для безбрежного покинув скудный дол,</p>
+<p>Летит за облака Юпитера орел,</p>
+<p>Сноп молнии неся мгновенный в верных лапах.</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

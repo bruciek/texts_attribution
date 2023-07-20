@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Не тем, Господь, могуч, непостижим…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.3.0</program-used>
+        <date>19.1.2020</date>
+        <id>64dd9230-26a6-417e-a226-60195b4cbd64</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Не тем, Господь, могуч, непостижим… — Афанасий Фет</strong></p>
+<p>Не тем, Господь, могуч, непостижим</p>
+<p>Ты пред моим мятущимся сознаньем,</p>
+<p>Что в звездный день твой светлый серафим</p>
+<p>Громадный шар зажег над мирозданьем</p>
+<empty-line/>
+<p>И мертвецу с пылающим лицом</p>
+<p>Он повелел блюсти твои законы,</p>
+<p>Всё пробуждать живительным лучом,</p>
+<p>Храня свой пыл столетий миллионы.</p>
+<empty-line/>
+<p>Нет, ты могуч и мне непостижим</p>
+<p>Тем, что я сам, бессильный и мгновенный,</p>
+<p>Ношу в груди, как оный серафим,</p>
+<p>Огонь сильней и ярче всей вселенной.</p>
+<empty-line/>
+<p>Меж тем как я — добыча суеты,</p>
+<p>Игралище ее непостоянства, —</p>
+<p>Во мне он вечен, вездесущ, как ты,</p>
+<p>Ни времени не знает, ни пространства.</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <book-title>Золотая_рыбка</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name></first-name><last-name>Константин_Бальмонт</last-name></author>
+        <program-used>calibre 4.22.0</program-used>
+        <date>27.9.2020</date>
+        <id>1d959db9-5790-404d-80d6-342268fc50f9</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p>Золотая рыбка - Константин Бальмонт В замке был веселый бал,</p>
+<p>Музыканты пели. Ветерок в саду качал</p>
+<p>Легкие качели. В замке, в сладостном бреду,</p>
+<p>Пела, пела скрипка. А в саду была в пруду</p>
+<p>Золотая рыбка. И кружились под луной,</p>
+<p>Точно вырезные, Опьяненные весной,</p>
+<p>Бабочки ночные. Пруд качал в себе звезду,</p>
+<p>Гнулись травы гибко, И мелькала там в пруду</p>
+<p>Золотая рыбка. Хоть не видели ее</p>
+<p>Музыканты бала, Но от рыбки, от нее,</p>
+<p>Музыка звучала. Чуть настанет тишина,</p>
+<p>Золотая рыбка Промелькнет, и вновь видна</p>
+<p>Меж гостей улыбка. Снова скрипка зазвучит,</p>
+<p>Песня раздается. И в сердцах любовь журчит,</p>
+<p>И весна смеется. Взор ко взору шепчет: «Жду!»</p>
+<p>Так светло и зыбко, Оттого что там в пруду —</p>
+<p>Золотая рыбка.</p>
+</section>
+</body>
+
+</FictionBook>

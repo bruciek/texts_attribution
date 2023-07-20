@@ -23,7 +23,7 @@ def to_sentences(names):
     sentences = names.split('*')
     only_russian_sentences = []
     for sentence in sentences:
-        only_russian_sentences.append(re.sub("[^а-яА-Я]", " ", str(sentence)))
+        only_russian_sentences.append(re.sub("[^а-яА-Я,:]", " ", str(sentence)))
     return only_russian_sentences
 
 # текст в слова
@@ -34,5 +34,5 @@ def to_word(names):
          if name != '': words.append(name)
      return words
 
-print(to_word(names))
+print(to_sentences(names))
 

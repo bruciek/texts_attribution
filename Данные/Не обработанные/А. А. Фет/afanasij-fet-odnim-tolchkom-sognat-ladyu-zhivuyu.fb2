@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Одним толчком согнать ладью живую…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.3.0</program-used>
+        <date>19.1.2020</date>
+        <id>63a2709e-f439-4242-834a-9b3aa54fe53f</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Одним толчком согнать ладью живую… — Афанасий Фет</strong></p>
+<p>Одним толчком согнать ладью живую</p>
+<p>С налаженных отливами песков,</p>
+<p>Одной волной подняться в жизнь иную,</p>
+<p>Учуять ветр с цветущих берегов,</p>
+<empty-line/>
+<p>Тоскливый сон прервать единым звуком,</p>
+<p>Упиться вдруг неведомым, родным,</p>
+<p>Дать жизни вздох, дать сладость тайным мукам,</p>
+<p>Чужое вмиг почувствовать своим,</p>
+<empty-line/>
+<p>Шепнуть о том, пред чем язык немеет,</p>
+<p>Усилить бой бестрепетных сердец —</p>
+<p>Вот чем певец лишь избранный владеет,</p>
+<p>Вот в чем его и признак и венец</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <book-title>Сияла ночь. Луной был полон сад. Лежали…</book-title>
+        <lang>ru</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Афанасий</first-name><last-name>Фет</last-name></author>
+        <program-used>calibre 4.8.0</program-used>
+        <date>31.1.2020</date>
+        <id>e337910a-8e8a-4347-9af3-eb272b9e8649</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Сияла ночь. Луной был полон сад. Лежали… — Афанасий Фет</strong></p>
+<p>Сияла ночь. Луной был полон сад. Лежали</p>
+<p>Лучи у наших ног в гостиной без огней</p>
+<p>Рояль был весь раскрыт, и струны в нем дрожали,</p>
+<p>Как и сердца у нас за песнию твоей.</p>
+<empty-line/>
+<p>Ты пела до зари, в слезах изнемогая,</p>
+<p>Что ты одна — любовь, что нет любви иной,</p>
+<p>И так хотелось жить, чтоб, звуки не роняя,</p>
+<p>Тебя любить, обнять и плакать над тобой.</p>
+<empty-line/>
+<p>И много лет прошло, томительных и скучных,</p>
+<p>И вот в тиши ночной твой голос слышу вновь,</p>
+<p>И веет, как тогда, во вздохах этих звучных,</p>
+<p>Что ты одна — вся жизнь, что ты одна — любовь.</p>
+<empty-line/>
+<p>Что нет обид судьбы и сердца жгучей муки,</p>
+<p>А жизни нет конца, и цели нет иной,</p>
+<p>Как только веровать в рыдающие звуки,</p>
+<p>Тебя любить, обнять и плакать над тобой!</p>
+<empty-line/>
+</section>
+</body>
+
+</FictionBook>
