@@ -14,7 +14,6 @@ from natasha import (
 )
 import json
 import markup
-import natasha
 
 from bs4 import BeautifulSoup as Soup
 import chardet
