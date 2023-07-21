@@ -8,28 +8,28 @@ def frequency_of_i(book): #частоты союза и (легенда)
     return count / len(words)
 #%%
 def frequency_of_comma(book): #частоты запятых
-    symbol_count = book.count(',')
+    symbol_count = book.text.count(',')
     return symbol_count / len(book)
 #%%
 def frequency_of_dot(book): #частоты точек
-        symbol_count = book.count('.')
+        symbol_count = book.text.count('.')
         return symbol_count / len(book)
 #%%
 def frequency_of_exclamation_mark(book): #частоты восклицательных знаков
-    symbol_count = book.count('!')
+    symbol_count = book.text.count('!')
     return symbol_count / len(book)
 #%%
 def frequency_of_question_mark(book): #частоты вопросительных знаков
-    symbol_count = book.count('?')
+    symbol_count = book.text.count('?')
     return symbol_count / len(book)
 #%%
 def frequency_of_brackets(book): #частоты скобок
-    symbol_count = book.count('(') + book.count(')') + book.count('[') + book.count(']')
+    symbol_count = book.text.count('(') + book.text.count(')') + book.text.count('[') + book.text.count(']')
     return symbol_count / len(book)
 
 #%%
 def frequency_of_quotation_marks(book): #частоты кавычек
-    symbol_count = book.count('"') + book.count('«') +  book.count('»')
+    symbol_count = book.text.count('"') + book.text.count('«') +  book.text.count('»')
     return symbol_count / len(book)
 
 #%%
@@ -37,7 +37,7 @@ def frequency_of_numbers(book): #частоты циферов
     symbol_count = 0
     number = '0123456789'
     for num in number:
-        symbol_count += book.count(number)
+        symbol_count += book.text.count(number)
     return symbol_count / len(book)
 #%%
 def number_of_unique_words(book): #количество уникальных слов
