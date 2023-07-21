@@ -1,3 +1,6 @@
+from natasha_func import *
+from collections import defaultdict
+
 def frequency_of_i(book): #частоты союза и (легенда)
     count = 0
     words = get_words(book)
@@ -41,7 +44,7 @@ def frequency_of_numbers(book): #частоты циферов
     symbol_count = 0
     number = '0123456789'
     for num in number:
-        symbol_count += text.count(number)
+        symbol_count += text.count(num)
     return symbol_count / len(text)
 #%%
 def number_of_unique_words(book): #количество уникальных слов
@@ -83,10 +86,11 @@ def correlation_of_vowels_consonants(book):#отношение согласны�
     v = 'йцкнгшщзхфвпрлджчсмтб'
     for glas in c: consonants += text.count(glas)
     for soglas in v: vowels += text.count(soglas)
-    return glas / soglas
+    return vowels / consonants
 
 def most_common_first_letter_in_words(book): #самая частая первая буква в словах
-    words = get_words(book.lower())
+    words = get_words(book)
+    words = [element.lower() for element in words]
     first_letters = ""
     for word in words:
         first_letters += word[0]
@@ -94,10 +98,11 @@ def most_common_first_letter_in_words(book): #самая частая перва
     freq = [0] * len(alf)
     for i in range(len(alf)):
         freq[i] += first_letters.count(alf[i])
-    return alf.index(max(freq))
+    return alf[freq.index(max(freq))]
 
 def most_common_first_letter_in_sents(book): #самая частая первая буква в предложениях
-    sents = get_sents(book.lower())
+    sents = get_sents(book)
+    sents = [element.lower() for element in sents]
     first_letters = ""
     for sent in sents:
             first_letters += sent[0]
@@ -105,7 +110,7 @@ def most_common_first_letter_in_sents(book): #самая частая перва
     freq = [0] * len(alf)
     for i in range(len(alf)):
         freq[i] += first_letters.count(alf[i])
-    return alf.index(max(freq))
+    return alf[freq.index(max(freq))]
 #%%
 def frequency_of_a(book): #частоты букв а
     text = book.text
@@ -328,3 +333,19 @@ def count_words_infinitive(doc):
                 if words[x] == lem[y]:
                     count_infinitive += 1
     return count_infinitive
+
+def freq_of_preps(book): #частота предлогов
+    count = 0
+    preps = ['без', 'безо', 'близ', 'в', 'во', 'вместо', 'вне', 'для', 'до', 'за', 'из', 'изо', 'из-за', 'из-под', 'к', 'ко', 'кроме', 'между', 'меж', 'на', 'над', 'надо', 'о', 'об', 'обо', 'от', 'ото', 'перед', 'передо', 'пред', 'предо', 'по', 'под', 'подо', 'при', 'про', 'ради', 'с', 'со', 'сквозь', 'среди', 'у', 'через', 'чрез']
+    words = get_words(book)
+    for word in words:
+        if word in preps: count += 1
+    return count/len(words)
+
+def freq_of_unions(book): #частота союзов
+    count = 0
+    unions = ['а', 'вдобавок', 'именно', 'также', 'то', 'благодаря', 'благо', 'буде', 'будто', 'вдобавок', 'в результате', 'в связи', 'в силу', 'в случае', 'если', 'в то время', 'в том случае', 'ввиду', 'вопреки', 'вроде', 'вследствие', 'да','еще', 'и', 'ито', 'дабы', 'даже', 'даром', 'для того', 'же', 'едва', 'ежели', 'если бы', 'затем', 'зато', 'все же', 'и значит', 'а именно',' и поэтому', 'и притом', 'и все-таки', 'и следовательно', 'и то', 'и тогда', 'и еще', 'кабы', 'как будто', 'как если бы', 'словно', 'как только', 'коли', 'к тому же', 'кроме того', 'либо', 'между тем', 'не столько','но даже', 'невзирая на', 'независимо от', 'несмотря на', 'перед тем', 'по мере того', 'по причине', 'подобно тому', 'пока', 'покамест', 'покуда', 'пока', 'не после того', 'поскольку', 'потому', 'потому что', 'почему', 'прежде', 'при всем том', 'при условии', 'притом', 'причем', 'пускай', 'пусть', 'ради', 'раз', 'раньше чем', 'с тех пор', 'так что', 'тогда как', 'то есть', 'то ли', 'тоже', 'только', 'только бы', 'только что', 'только лишь', 'только чуть', 'точно', 'хотя', 'чтоб', 'чтобы']
+    words = get_words(book)
+    for word in words:
+        if word in unions: count += 1
+    return count/len(words)
