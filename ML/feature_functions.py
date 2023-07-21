@@ -194,9 +194,11 @@ def average_lenght_of_verbs(book): #средняя длина глаголов
     count = 0
     for noun in nouns:
         count += len(noun)
+        count += len(noun)
     return count/len(nouns)
 
 def correlation_of_short_long_words(doc): #отношение коротких слов к длинным. на вход принимает произведения
+    from natasha_func import get_words
     short = 0
     long = 0
     words = get_words(doc)
@@ -208,6 +210,7 @@ def correlation_of_short_long_words(doc): #отношение коротких �
     return short / long
 
 def correlation_of_long_medium_words(doc):
+    from natasha_func import get_words
     long = 0
     medium = 0
     words = get_words(doc)
@@ -222,6 +225,7 @@ def semicolon_freq(doc):
     return doc.text.count(';') / len(doc.text)
 #%%
 def count_upper_words(doc):
+    from natasha_func import get_words
     count = 0
     words = get_words(doc)
     for word in words:
@@ -230,6 +234,8 @@ def count_upper_words(doc):
     return count
 #%%
 def freq_of_freq_word(doc):
+    from collections import defaultdict
+    from natasha_func import get_words
     temp = defaultdict(int)
     words = get_words(doc)
     for word in words:
@@ -238,6 +244,8 @@ def freq_of_freq_word(doc):
     return words.count(w)
 #%%
 def freq_word_from_adjective(doc):
+    from collections import defaultdict
+    from natasha_func import get_lemma_part_speech
     adjectives = get_lemma_part_speech(doc, 'ADJ')
     temp = defaultdict(int)
     for word in adjectives:
@@ -246,6 +254,8 @@ def freq_word_from_adjective(doc):
     return adjectives.count(w) / len(adjectives)
 #%%
 def freq_word_from_noun(doc):
+    from collections import defaultdict
+    from natasha_func import get_lemma_part_speech
     nouns = get_lemma_part_speech(doc, 'NOUN')
     temp = defaultdict(int)
     for word in nouns:
@@ -254,6 +264,8 @@ def freq_word_from_noun(doc):
     return nouns.count(w) / len(nouns)
 #%%
 def freq_word_from_verbs(doc):
+    from collections import defaultdict
+    from natasha_func import get_lemma_part_speech
     verbs = get_lemma_part_speech(doc, 'VERB')
     temp = defaultdict(int)
     for word in verbs:
@@ -266,10 +278,12 @@ def freq_of_space(doc) -> float:
     return text.count(' ') / len(text)
 
 def sentences_avg_len_symbols(doc) -> float:
+    from natasha_func import get_sents
     sentences = get_sents(doc)
     return len(''.join(sentences).replace(' ', '')) / len(sentences)
 
 def capitalized_words_count_without_start_of_sentences(doc) -> int:
+    from natasha_func import get_sents
     sentences = get_sents(doc)
     capital_letters = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
     count = 0
@@ -282,6 +296,7 @@ def capitalized_words_count_without_start_of_sentences(doc) -> int:
     return count
 
 def avg_syllable_per_noun(doc) -> float:
+    from natasha_func import get_lemma_part_speech
     nouns = get_lemma_part_speech(doc, 'NOUN')
     vowels = 'аеёиоуыэюя'
     syllable_count = 0
@@ -292,6 +307,7 @@ def avg_syllable_per_noun(doc) -> float:
     return syllable_count / len(nouns)
 
 def avg_syllable_per_verb(doc) -> float:
+    from natasha_func import get_lemma_part_speech
     verbs = get_lemma_part_speech(doc, 'VERB')
     vowels = 'аеёиоуыэюя'
     syllable_count = 0
@@ -302,6 +318,7 @@ def avg_syllable_per_verb(doc) -> float:
     return syllable_count / len(verbs)
 
 def avg_syllable_per_adjective(doc) -> float:
+    from natasha_func import get_lemma_part_speech
     adjectives = get_lemma_part_speech(doc, 'ADJ')
     vowels = 'аеёиоуыэюя'
     syllable_count = 0
@@ -312,6 +329,7 @@ def avg_syllable_per_adjective(doc) -> float:
     return syllable_count / len(adjectives)
 
 def avg_syllable_per_adverb(doc) -> float:
+    from natasha_func import get_lemma_part_speech
     adverbs = get_lemma_part_speech(doc, 'ADV')
     vowels = 'аеёиоуыэюя'
     syllable_count = 0
@@ -322,6 +340,9 @@ def avg_syllable_per_adverb(doc) -> float:
     return syllable_count / len(adverbs)
 
 def count_words_infinitive(doc):
+    from natasha_func import get_doc
+    from natasha_func import get_words
+    from natasha_func import get_lemma_words
     words = get_words(doc)
     # lem_new = ' '.join(get_lemma_words(doc))
     lem = get_words(get_doc(' '.join(get_lemma_words(doc))))
