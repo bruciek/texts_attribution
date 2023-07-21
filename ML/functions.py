@@ -10,7 +10,6 @@ def frequency_of_i(book): #частоты союза и (легенда)
 def frequency_of_comma(book): #частоты запятых
     symbol_count = book.count(',')
     return symbol_count / len(book)
-
 #%%
 def frequency_of_dot(book): #частоты точек
         symbol_count = book.count('.')
@@ -197,4 +196,139 @@ def average_lenght_of_verbs(book): #средняя длина глаголов
         count += len(noun)
     return count/len(nouns)
 
+def correlation_of_short_long_words(doc): #отношение коротких слов к длинным. на вход принимает произведения
+    short = 0
+    long = 0
+    words = get_words(doc)
+    for word in words:
+        if len(word) < 5:
+            short += 1
+        elif len(word) > 8:
+            long += 1
+    return short / long
 
+def correlation_of_long_medium_words(doc):
+    long = 0
+    medium = 0
+    words = get_words(doc)
+    for word in words:
+        if  4 <= len(word) <= 8:
+            medium += 1
+        elif len(word) > 8:
+            long += 1
+    return long / medium
+#%%
+def semicolon_freq(doc):
+    return doc.text.count(';') / len(doc.text)
+#%%
+def count_upper_words(doc):
+    count = 0
+    words = get_words(doc)
+    for word in words:
+        if word.isupper() == True:
+            count += 1
+    return count
+#%%
+def freq_of_freq_word(doc):
+    temp = defaultdict(int)
+    words = get_words(doc)
+    for word in words:
+        temp[word] += 1
+    w = max(temp, key=temp.get)
+    return words.count(w)
+#%%
+def freq_word_from_adjective(doc):
+    adjectives = get_lemma_part_speech(doc, 'ADJ')
+    temp = defaultdict(int)
+    for word in adjectives:
+        temp[word] += 1
+    w = max(temp, key=temp.get)
+    return adjectives.count(w) / len(adjectives)
+#%%
+def freq_word_from_noun(doc):
+    nouns = get_lemma_part_speech(doc, 'NOUN')
+    temp = defaultdict(int)
+    for word in nouns:
+        temp[word] += 1
+    w = max(temp, key=temp.get)
+    return nouns.count(w) / len(nouns)
+#%%
+def freq_word_from_verbs(doc):
+    verbs = get_lemma_part_speech(doc, 'VERB')
+    temp = defaultdict(int)
+    for word in verbs:
+        temp[word] += 1
+    w = max(temp, key=temp.get)
+    return verbs.count(w) / len(verbs)
+
+def freq_of_space(doc) -> float:
+    text = doc.text
+    return text.count(' ') / len(text)
+
+def sentences_avg_len_symbols(doc) -> float:
+    sentences = get_sents(doc)
+    return len(''.join(sentences).replace(' ', '')) / len(sentences)
+
+def capitalized_words_count_without_start_of_sentences(doc) -> int:
+    sentences = get_sents(doc)
+    capital_letters = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+    count = 0
+    for sentence in sentences:
+        for i in range(1, len(sentence)):
+            letter_prev = sentence[i - 1]
+            letter_curr = sentence[i]
+            if letter_prev == ' ' and letter_curr in capital_letters:
+                count += 1
+    return count
+
+def avg_syllable_per_noun(doc) -> float:
+    nouns = get_lemma_part_speech(doc, 'NOUN')
+    vowels = 'аеёиоуыэюя'
+    syllable_count = 0
+    for noun in nouns:
+        for letter in noun:
+            if letter in vowels:
+                syllable_count += 1
+    return syllable_count / len(nouns)
+
+def avg_syllable_per_verb(doc) -> float:
+    verbs = get_lemma_part_speech(doc, 'VERB')
+    vowels = 'аеёиоуыэюя'
+    syllable_count = 0
+    for verb in verbs:
+        for letter in verb:
+            if letter in vowels:
+                syllable_count += 1
+    return syllable_count / len(verbs)
+
+def avg_syllable_per_adjective(doc) -> float:
+    adjectives = get_lemma_part_speech(doc, 'ADJ')
+    vowels = 'аеёиоуыэюя'
+    syllable_count = 0
+    for adjective in adjectives:
+        for letter in adjective:
+            if letter in vowels:
+                syllable_count += 1
+    return syllable_count / len(adjectives)
+
+def avg_syllable_per_adverb(doc) -> float:
+    adverbs = get_lemma_part_speech(doc, 'ADV')
+    vowels = 'аеёиоуыэюя'
+    syllable_count = 0
+    for adverb in adverbs:
+        for letter in adverb:
+            if letter in vowels:
+                syllable_count += 1
+    return syllable_count / len(adverbs)
+
+def count_words_infinitive(doc):
+    words = get_words(doc)
+    # lem_new = ' '.join(get_lemma_words(doc))
+    lem = get_words(get_doc(' '.join(get_lemma_words(doc))))
+    count_infinitive = 0
+    for x in range(len(words)):
+        for y in range(len(lem)):
+            if x == y:
+                if words[x] == lem[y]:
+                    count_infinitive += 1
+    return count_infinitive
