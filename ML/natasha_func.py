@@ -4,11 +4,6 @@ from natasha import (
 
     NewsEmbedding,
     NewsMorphTagger,
-    NewsSyntaxParser,
-    NewsNERTagger,
-
-    PER,
-    NamesExtractor,
 
     Doc
 )
@@ -19,7 +14,7 @@ from bs4 import BeautifulSoup as Soup
 import chardet
 import unicodedata
 import re
-#%%
+
 def get_raw_text(path_to_file):
     with open(path_to_file, 'rb') as f:
         rtext = f.read()
@@ -35,7 +30,6 @@ def get_raw_text(path_to_file):
     return text
 
 #%%
-text = get_raw_text('Данные/Не обработанные/Белый/belyj_a-text_0040.fb2')
 #%%
 def get_doc(text):
     doc = Doc(text)
@@ -51,11 +45,13 @@ def get_doc(text):
     for token in doc.tokens:
         token.lemmatize(morph_vocab)
     return doc
+
+def get_only_doc(text):
+    doc = Doc(text)
+    return doc
 #%%
 # функция get_doc от get_raw достает doc-и для других функицй
-doc = get_doc(get_raw_text('Данные/Не обработанные/Белый/belyj_a-text_0040.fb2'))
 #%%
-doc.tokens
 #%%
 import re
 def has_cyrillic(text):
