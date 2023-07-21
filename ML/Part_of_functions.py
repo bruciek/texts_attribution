@@ -62,3 +62,4 @@ def freq_word_from_verbs(doc):
         temp[word] += 1
     w = max(temp, key=temp.get)
     return verbs.count(w) / len(verbs)
+#saaf
