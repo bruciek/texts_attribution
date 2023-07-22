@@ -84,9 +84,11 @@ def get_part_speech(doc, pos):
             part_speech.append(token.text)
     return part_speech
 
-def get_lemma_part_speech(doc, pos):
-    lemma_part_speech = []
+def get_lemma_part_speech(doc):
+    lemma_part_speech = {}
     for token in doc.tokens:
-        if token.pos == pos:
-            lemma_part_speech.append(token.lemma)
+        if token.pos not in lemma_part_speech.keys():
+            lemma_part_speech[token.pos] = []
+        else:
+            lemma_part_speech[token.pos].append(token.lemma)
     return lemma_part_speech
