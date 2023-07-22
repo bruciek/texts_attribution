@@ -1,3 +1,6 @@
+from ML.natasha_func import get_sents
+
+
 def capitalized_words_count_without_start_of_sentences(sentences):
     alphabet_capitalized = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
     count = 0
@@ -22,4 +25,8 @@ def most_common_first_letter_in_sentences(sentences):
 def avg_length_of_sentence_by_letters(sentences):
     return len(''.join(sentences).replace(' ', '')) / len(sentences)
 
-AVAILABLE_FEATURES_WITH_SENTENCE_LIST = [capitalized_words_count_without_start_of_sentences, most_common_first_letter_in_sentences, avg_length_of_sentence_by_letters]
+FUNC_LIST = [capitalized_words_count_without_start_of_sentences, most_common_first_letter_in_sentences, avg_length_of_sentence_by_letters]
+def get_feature_sents(doc):
+    sentences = get_sents(doc)
+    sent_feature_list = [func(sentences) for func in FUNC_LIST]
+    return sent_feature_list

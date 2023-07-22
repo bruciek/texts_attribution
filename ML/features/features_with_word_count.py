@@ -73,8 +73,8 @@ def freq_of_n(freq_chars: Counter) -> float:
 def freq_of_t(freq_chars: Counter) -> float:
     return freq_chars['т'] / freq_chars.total()
 
+func_chars = [freq_of_t, freq_of_n, freq_of_e, freq_of_o, freq_of_a, freq_of_i, freq_of_enter, freq_of_semicolon, correlation_of_vowels_consonants, freq_of_number, freq_of_quotation, freq_of_bracket, freq_of_exclamation_mark, freq_of_question_mark, freq_of_comma, freq_of_dot]
 def get_feature_symbol(doc):
     freq_chars = Counter(doc.text)
-    func_chars = [freq_of_t, freq_of_n, freq_of_e, freq_of_o, freq_of_a, freq_of_i, freq_of_enter, freq_of_semicolon, correlation_of_vowels_consonants, freq_of_number, freq_of_quotation, freq_of_bracket, freq_of_exclamation_mark, freq_of_question_mark, freq_of_comma, freq_of_dot]
     chars_list = [func(freq_chars) for func in func_chars]
     return chars_list
