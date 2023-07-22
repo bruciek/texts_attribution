@@ -1,3 +1,6 @@
+from natasha import Doc
+from typing import Callable, List
+
 from ML.utils.extended_counter import ExtendedCounter as Counter
 
 
@@ -72,3 +75,11 @@ def freq_of_n(freq_chars: Counter) -> float:
 
 def freq_of_t(freq_chars: Counter) -> float:
     return freq_chars['т'] / freq_chars.total()
+
+
+AVAILABLE_FEATURES: List[Callable[[Doc], float]] = [freq_of_t, freq_of_n]
+
+def feture_runner(book: Doc) -> List[float]:
+    freq_chars = Counter(book.text)
+    return [func(freq_chars) for func in AVAILABLE_FEATURES]
+
