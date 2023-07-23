@@ -621,6 +621,14 @@ class Text:
         
         return Text.one_sided_khmelev_statistics(text1, text2), Text.one_sided_khmelev_statistics(text2, text1)
 
+
+    @classmethod
+    def unique_word_process_test_2_texts(cls, text1: 'Text', text2: 'Text') -> tp.Tuple[float, float]:
+        obj = Text(text1.text + ' ' + text2.text)
+        res = obj.unique_word_process()
+        return res[0], res[1]
+
+
     def unique_word_process_test(self) -> tp.Tuple[float, float]:
         """
         :return: tp.Tuple of unique test statistic and p-value
