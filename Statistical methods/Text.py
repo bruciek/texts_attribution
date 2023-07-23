@@ -264,7 +264,7 @@ class Text:
         for word in words:
             mu = 0 
             for text in d:
-                mu += text[word]
+                mu += text.get(word, 0)
             mu = mu / len(d)
             average[word] = mu
     
@@ -273,7 +273,7 @@ class Text:
         for word in words:
             sigma = 0
             for text in d:
-                sigma += (text[word]-average[word])**2
+                sigma += (text.get(word, 0)-average[word])**2
             sigma = np.sqrt(sigma/len(d))
             mse_dict[word] = sigma
     
@@ -566,7 +566,7 @@ class Text:
         delta = 0
         for word in words:
             if learned_dict[word] > 0:
-                delta += abs(dict1[word] - dict2[word])/learned_dict[word]
+                delta += abs(dict1.get(word, 0) - dict2.get(word, 0))/learned_dict[word]
             
         delta = delta / len(words)
         return delta
