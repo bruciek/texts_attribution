@@ -29,4 +29,70 @@ def nesmotry_na(text):
     text = text.lower()
     return text.count('несмотря на') / len(text)
 
-list_functions = [freq_ellipsis, bliz, bezo, chrez, izo, s_tex_por, tolko_losh, nesmotry_na]
+
+
+
+
+def obo(text):
+    text = text.lower()
+    return text.count('обо') / len(text)
+#%%
+def cherez(text):
+    text = text.lower()
+    return text.count('через') / len(text)
+#%%
+def puskay(text):
+    text = text.lower()
+    return text.count('пускай') / len(text)
+#%%
+def podobno_tomu(text):
+    text = text.lower()
+    return text.count('подобно тому') / len(text)
+#%%
+def nevziraia_na(text):
+    text = text.lower()
+    return text.count('невзирая на') / len(text)
+#%%
+def libo(text):
+    text = text.lower()
+    return text.count('либо') / len(text)
+#%%
+def i_vse_taki(text):
+    text = text.lower()
+    return text.count('и все-таки') / len(text)
+#%%
+def i_sledovatelno(text):
+    text = text.lower()
+    return text.count('и следовательно') / len(text)
+#%%
+def vopreki(text):
+    text = text.lower()
+    return text.count('вопреки') / len(text)
+#%%
+def vrode(text):
+    text = text.lower()
+    return text.count('вроде') / len(text)
+#%%
+def slovno(text):
+    text = text.lower()
+    return text.count('словно') / len(text)
+#%%
+def kak_esly_bi(text):
+    text = text.lower()
+    return text.count('как если бы') / len(text)
+#%%
+def po_prichine(text):
+    text = text.lower()
+    return text.count('по причине') / len(text)
+#%%
+def poskolky(text):
+    text = text.lower()
+    return text.count('поскольку') / len(text)
+#%%
+def radi(text):
+    text = text.lower()
+    return text.count('ради') / len(text)
+
+list_functions = [freq_ellipsis, bliz, bezo, chrez, izo, s_tex_por, tolko_losh, nesmotry_na, obo, cherez,
+                  puskay, podobno_tomu, nevziraia_na, libo, i_vse_taki, i_sledovatelno, vopreki, vrode,
+                  slovno, kak_esly_bi, po_prichine, poskolky, radi]
